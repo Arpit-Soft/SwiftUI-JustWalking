@@ -13,6 +13,19 @@
 		2DFF289F26DBEF62007E0372 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFF289E26DBEF62007E0372 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2DFF28C026DBF949007E0372 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2DFF289426DBEF60007E0372 /* SwiftUI-JustWalking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-JustWalking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFF289726DBEF60007E0372 /* SwiftUI_JustWalkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_JustWalkingApp.swift; sourceTree = "<group>"; };
@@ -20,6 +33,9 @@
 		2DFF289B26DBEF62007E0372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DFF289E26DBEF62007E0372 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2DFF28A026DBEF62007E0372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFF28AD26DBF945007E0372 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2DFF28AF26DBF945007E0372 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2DFF28C326DBF98C007E0372 /* SwiftUI-JustWalking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-JustWalking.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				2DFF289626DBEF60007E0372 /* SwiftUI-JustWalking */,
+				2DFF28AC26DBF945007E0372 /* Frameworks */,
 				2DFF289526DBEF60007E0372 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +69,7 @@
 		2DFF289626DBEF60007E0372 /* SwiftUI-JustWalking */ = {
 			isa = PBXGroup;
 			children = (
+				2DFF28C326DBF98C007E0372 /* SwiftUI-JustWalking.entitlements */,
 				2DFF289726DBEF60007E0372 /* SwiftUI_JustWalkingApp.swift */,
 				2DFF289926DBEF60007E0372 /* ContentView.swift */,
 				2DFF289B26DBEF62007E0372 /* Assets.xcassets */,
@@ -69,6 +87,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2DFF28AC26DBF945007E0372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF28AD26DBF945007E0372 /* WidgetKit.framework */,
+				2DFF28AF26DBF945007E0372 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +106,7 @@
 				2DFF289026DBEF60007E0372 /* Sources */,
 				2DFF289126DBEF60007E0372 /* Frameworks */,
 				2DFF289226DBEF60007E0372 /* Resources */,
+				2DFF28C026DBF949007E0372 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -267,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-JustWalking/SwiftUI-JustWalking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-JustWalking/Preview Content\"";
 				DEVELOPMENT_TEAM = AAWXZ6PH5F;
@@ -289,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-JustWalking/SwiftUI-JustWalking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-JustWalking/Preview Content\"";
 				DEVELOPMENT_TEAM = AAWXZ6PH5F;
